@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Get Record Without LayoutTypes" icon-name="standard:account" variant="base">
+      <div class="slds-var-m-around_medium">
+        <template if:true={accountInf}>
+             Name: {accountInf.fields.Name.value} <br>
+             Annaul Revenue: {accountInf.fields.AnnualRevenue.value} <br>
+             Industry: {accountInf.fields.Industry.value} <br>
+             Type: {accountInf.fields.Type.value}
+             
+
+
+        </template>
+
+      </div>
+    </lightning-card>
+    
+</template>

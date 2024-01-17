@@ -1,0 +1,42 @@
+<template>
+    <lightning-card title="Temlate Looping">
+        <div class="slds-m-around_medium">
+              
+            <lightning-button label="Verileeri Görmek İçin Tıklayınız" onclick={handleClick} icon-name="utility:down" tabindex="-1">
+            </lightning-button>
+                <template lwc:if={Tikla}>
+                    <template for:each={countries} for:item="country" for:index="index">
+                        <div key={country} style="color: blue;">
+                            {country}
+                        </div>
+                    </template>
+                </template>  
+     </div>
+
+
+
+
+     <div class="slds-m-around_medium">
+        <template for:each={contacts} for:item="con" for:index="index">
+            <li key={con.Id} class="slds-p-around_medium">
+                <strong>First Name : </strong>&nbsp;{con.firstName}               
+                &nbsp;
+                <strong>Last Name:</strong> &nbsp;{con.lastName}
+            </li>
+        </template>
+     </div>
+     
+
+    <div class="slds-m-around_medium">
+        <lightning-input label="Şehir İsmini Giriniz"
+                         type="text" 
+                         onchange={changeHandler}>               
+
+        </lightning-input>
+        <div class="slds-m-around_medium">            
+                {sehirName}
+        </div>
+      
+    </div>
+   </lightning-card>
+</template>

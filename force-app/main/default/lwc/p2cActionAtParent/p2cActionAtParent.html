@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Parent to Child-on ACTION at Parent" style="color: blue;">
+        <div class="slds-var-m-around_medium">
+            <lightning-input 
+                    label="Enter Contact"
+                    type="text"
+                    name="Contact1"
+                    onchange={getContactsInfos}
+                    >
+        </lightning-input>
+        </div>        
+        <div class="slds-var-m-around_medium">
+            <template if:true={sunuc}>
+                <c-display-results 
+            results={sunuc}
+            columns={kolonlar}>
+            </c-display-results>
+
+            </template>
+            
+        </div>     
+     
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Two Way Binding">
+
+        <div class="slds-m-around_medium">
+
+            <lightning-input label="Firs Name" 
+                             type="text"
+                             value="Bigileri buaraya gir"
+                             onchange={changeHandler}>
+
+            </lightning-input>
+
+       
+        
+            <lightning-input label="Last Name" 
+                             type="text"
+                             value="Bigileri buaraya gir"
+                             onchange={changeHandler}>
+
+            </lightning-input>
+
+              <div>
+                <strong> benim adım: {firstName} {lastName}</strong>
+              </div>
+             
+            
+
+        </div>
+    </lightning-card>
+</template>

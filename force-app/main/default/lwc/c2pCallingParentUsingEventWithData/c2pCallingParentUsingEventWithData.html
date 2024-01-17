@@ -1,0 +1,24 @@
+<template>
+
+    <lightning-card title="Child to Parent -Using Event with Data">
+        <div class="slds-var-m-around_medium">
+            <div>Merhaba ben Parent Komponentim. Child Comp ten Parent comp İletişim
+            </div>        
+
+            <template if:true={message}>
+                <div>Modaldan gelen data: {message.isim} {message.soyisim}</div>
+
+            </template>
+            <lightning-button label="Modal Companentini Göster" onclick={acmaHandler}>
+            </lightning-button>
+           
+            <template if:true={modalGoster}>
+                <c-model-component onkapat={kapatmaHandler}></c-model-component>
+            </template>
+           
+        </div>
+
+      
+    </lightning-card>
+    
+</template>

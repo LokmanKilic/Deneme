@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Picklist Opportunities byRecortTypeId" icon-name="standard:account" variant="base">
+        <div class="slds-var-m-around_medium">
+            <lightning-combobox
+              name="Industry"
+              label="Select Record"
+              value={Industry}
+              
+              options={industryOptions}
+              onchange={handleChange} 
+               
+               
+            ></lightning-combobox>         
+
+        </div>
+         <div class="slds-var-m-around_medium">
+            Seçilen Stage Name : {industrySource}
+         </div>
+
+      
+    </lightning-card>
+    
+</template>

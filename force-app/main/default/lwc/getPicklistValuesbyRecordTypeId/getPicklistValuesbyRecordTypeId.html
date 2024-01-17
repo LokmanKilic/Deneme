@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Picklist Values by Record Type" icon-name="standard:account" variant="base">
+
+        <div class="slds-var-m-around_medium">
+            <lightning-combobox
+              name="AccountSource"
+              label="Select a Record"
+              value={AccountSource}
+              options={getPicklistValues}
+              onchange={handleChange}             
+               
+            ></lightning-combobox>
+            <div class="slds-var-m-around_medium">
+               Seçilen account source :  {AccountSource}
+            </div>
+
+
+        </div>
+      
+    </lightning-card>
+    
+</template>

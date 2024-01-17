@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Get Records-MoreRecords-Birden Çok Object" icon-name="standard:account" variant="base">
+        <div class="slds-var-m-around_medium">
+            <template if:true={accounts}>
+                <div class="slds-var-m-around_medium">
+                    Name: {accounts.result.fields.Name.value} <br>                        
+                    Industry:{accounts.result.fields.Industry.value} <br>     
+                </div>                   
+                                 
+            </template>
+            <template if:true={contacts}>             
+                    <div class="slds-var-m-around_medium">
+                        Name: {contacts.result.fields.Name.value} <br>
+                        Title: {contacts.result.fields.Title.value} 
+                    </div>                  
+                    
+            </template>  
+            
+           <!--   II.Yol- 
+             <template if:true={accounts}>
+                <template for:each={accounts} for:item="acc">
+                    <div key={acc.result.id} class="slds-var-m-around_medium">
+                        Name: {acc.result.fields.Name.value} <br>                        
+                                       
+                    </div>
+                </template>
+            </template>
+            <template if:true={contacts}>
+                <template for:each={contacts} for:item="con">
+                    <div key={con.result.id} class="slds-var-m-around_medium">
+                        Name: {con.result.fields.Name.value} <br>                        
+                                          
+                    </div>
+                </template>
+            </template> -->
+        </div>
+    </lightning-card>  
+</template>

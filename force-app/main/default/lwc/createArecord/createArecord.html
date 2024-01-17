@@ -1,0 +1,59 @@
+<template>
+    <lightning-card  title="Create A Record" icon-name="standard:account" variant="base">
+
+        <div class="slds-var-m-around_medium">
+            <form class="createRecordForm">
+
+                <lightning-input label="First Name"
+                                 name="FirstName"
+                                 type="text"
+                                 onchange={changeHandler}>
+                </lightning-input>
+                <lightning-input label="Last Name"
+                                 name="LastName"
+                                 type="text"
+                                 onchange={changeHandler}>
+                </lightning-input>
+                <lightning-input label="Title"
+                                 name="Title"
+                                 type="text"
+                                 onchange={changeHandler}>
+                </lightning-input>
+                <lightning-input label="Email"
+                                 name="Email"
+                                 type="email"
+                                 onchange={changeHandler}>
+                </lightning-input>
+                <lightning-input label="Phone"
+                                 name="Phone"
+                                 type="Phone"
+                                 onchange={changeHandler}>
+                </lightning-input>
+                               
+
+            </form>
+
+            <div  class="slds-var-m-around_medium slds-align_absolute-center">
+                
+         <lightning-button 
+                variant="brand"
+                label="Save" 
+                onclick={contactOlustur} 
+                class="slds-m-left_x-small"
+         ></lightning-button>   
+         <lightning-button 
+                variant="brand"
+                label="Cancel" 
+                onclick={contactCancel}
+                class="slds-m-left_x-small"
+         ></lightning-button>             
+
+        </div>
+
+
+
+        </div>
+      
+    </lightning-card>
+    
+</template>

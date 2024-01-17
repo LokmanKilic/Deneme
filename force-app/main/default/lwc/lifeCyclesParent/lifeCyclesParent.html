@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Lifecycle Hooks">
+
+        <div class="slds-var-m-around_large">
+            <template if:true={gosterChild}>
+                    <c-lifecycles-child>  </c-lifecycles-child>
+            </template>
+
+            <lightning-button label="Child'ı gizle" onclick={childHandler}></lightning-button>
+            <lightning-input type="text" value={girisDegeri} onkeyup={changeHandler}></lightning-input>
+
+            <div> Girilen Değer:{girisDegeri}</div>
+        </div>
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Get Info with Imperative Method Apex Class">
+
+        <div class="slds-var-m-around_medium">
+
+            <lightning-button 
+              variant="brand"
+              label="Get Info" 
+              onclick={getInfoApexImperatives} 
+            ></lightning-button>
+
+            <div class="slds-var-m-top_medium">
+
+                <lightning-datatable
+                  key-field="id"
+                  data={opps}
+                  columns={columns}
+                ></lightning-datatable>
+            </div>
+
+        </div>
+
+      
+    </lightning-card>
+    
+</template>

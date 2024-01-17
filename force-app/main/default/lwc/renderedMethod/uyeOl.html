@@ -1,0 +1,58 @@
+<template>
+    <lightning-card  title="Üye Ol" >
+      <div class="slds-var-m-around_medium">
+        Üye olmak için formu doldurunuz
+
+        <lightning-input type="text" 
+                         label="İsminizi Giriniz" 
+                         name="İsim" 
+                         variant="standard"
+                         placeholder="Örnek isim:Mahmut">
+
+        </lightning-input>
+        <lightning-input type="text" 
+                         label="Soyisminizi Giriniz" 
+                         name="Soyisim" 
+                         variant="standard"
+                         placeholder="Örnek isim:Kılıç">
+
+        </lightning-input>
+        <lightning-input type="email" 
+                         label="Mail Adresi Giriniz" 
+                         name="Mail" 
+                         variant="standard"
+                         placeholder="Örnek isim: lkmn@gmail.com">
+
+        </lightning-input>
+        <lightning-input type="text" 
+                         label="Kullanıcı Adı Giriniz" 
+                         name="Kullanıc" 
+                         variant="standard"
+                         placeholder="Örnek isim:Kılıç@">
+
+        </lightning-input>
+        <lightning-input type="password" 
+                         label="ŞifreGiriniz" 
+                         name="Password" 
+                         variant="standard">                       
+
+        </lightning-input>
+
+        <div  class="slds-var-m-around_large">
+            <lightning-button class="slds-var-m-right_large"
+                        variant="neutural" 
+                        label="Çıkış Yap" 
+                        onclick={clickHandler}>
+        </lightning-button>
+        <lightning-button 
+                        variant="success" 
+                        label="Üye Ol" 
+                        onclick={uyeOlHandler}>
+        </lightning-button>
+        </div>   
+
+
+        
+      </div>
+    </lightning-card>
+</template>

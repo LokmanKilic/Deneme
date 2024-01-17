@@ -1,0 +1,41 @@
+<template>
+    <lightning-card  title="Track And Getter" icon-name="standard:account" >
+      <div class="slds-m-around_medium">
+        
+        <!-- <lightning-input label="Yeni Bilgi"
+                         type="text"
+                         onchange={handleChange} >
+          
+        </lightning-input> -->
+        
+        <lightning-input label="ulke"               
+                         type="text"
+                         onchange={handleChange}
+                          >                     
+          
+        </lightning-input>
+        <lightning-input label="sehir"
+                         type="text"
+                         onchange={handleChange}
+                          >                     
+          
+        </lightning-input>
+        <lightning-input label="tevellud"
+                         type="text"
+                         onchange={handleChange}
+                          >                     
+          
+        </lightning-input>
+
+        <div>
+            ben : {nerelisin.ulke}'den geldim. {nerelisin.sehir} şehrinde oturuyorum. <br>
+             tevellüdüm {nerelisin.tevellud} tarihidir.  <br> Ençok sevdiğim meyve {meyve}dir
+            
+                 </div>
+
+
+
+
+      </div>
+    </lightning-card>
+</template>

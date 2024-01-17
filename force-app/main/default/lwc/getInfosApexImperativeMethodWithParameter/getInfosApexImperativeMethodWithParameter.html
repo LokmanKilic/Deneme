@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Get Info with Imp Method Apex With Parameter" icon-name="standard:account" >
+        <lightning-input
+                 type="search"
+                 label="Enter the Name that you want to search"
+                 onkeyup={getAccInfosWithParameter}> 
+    </lightning-input>
+    <div class="slds-var-m-around_Medium">
+        <template if:true={contactlar}>
+            <template for:each={contactlar} for:item="contact">
+                <div key={contact.Name}>
+                    <strong> First Name : {contact.FirstName} Last Name :{contact.LastName} </strong> <br>
+                    Title: {contact.Title} <br>
+                    Email: {contact.Email}
+
+                </div>
+
+            </template>
+
+        </template>
+
+    </div>
+             
+    </lightning-card>
+    
+</template>

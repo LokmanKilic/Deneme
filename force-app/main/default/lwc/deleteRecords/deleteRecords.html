@@ -1,0 +1,20 @@
+<template>
+    <lightning-card  title="Delete Records" icon-name="standard:account" >
+        <div class="slds-var-m-around_medium">
+            <lightning-input 
+              type="text"
+              label=" Put RecordId"
+              onchange={changeHandler}
+            ></lightning-input>
+        </div>
+        <div class="slds-align_absolute-center">
+            <lightning-button 
+              variant="brand"
+              label="Delete Record" 
+              onclick={kaydiSil} 
+            ></lightning-button>
+        </div>
+      
+    </lightning-card>
+    
+</template>
