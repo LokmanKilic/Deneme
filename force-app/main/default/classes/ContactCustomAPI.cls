@@ -170,7 +170,7 @@ global  class ContactCustomAPI {
             con.Phone=conPhone;
             update con;
 
-            return con.Id +'ID\'li contact başarı ile update edildi.';
+            return con.Id +'ID\'li contact başarı ile update edidi.';
 
 
 
